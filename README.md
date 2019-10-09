@@ -9,7 +9,7 @@ Will polyfill the functionality of:
 </a>
 ```
 
-in [browsers that don't support it](https://www.caniuse.com/#feat=download). At this time, that's mainly IE. This polyfill is **small** and works **fast**.
+in IE11, [which doesn't support it](https://www.caniuse.com/#feat=download). This polyfill is **small** and works **fast**.
 
 ## Usage
 
@@ -27,7 +27,7 @@ import 'download-attribute-polyfill';
 This polyfill automatically does its work. It will:
 
 1. Detect if polyfilling is needed (and otherwise won't do anything)
-2. Detect any links using the `download` attribute
+2. Detect on click if it's on a link with the `download` attribute
 3. Prevent their default behaviour
-4. Via an XMLHttpRequest, create a blob of data
-5. Instruct the browser to download that data
+4. Via an `XMLHttpRequest`, request the resource and create a blob of data
+5. Instruct IE11 to download that data using `msSaveBlob`

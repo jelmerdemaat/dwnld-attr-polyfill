@@ -2,7 +2,7 @@
   "name": "download-attribute-polyfill",
   "version": "1.0.1",
   "description": "Polyfills the a[download] attribute",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
@@ -10,7 +10,15 @@
     "postinstall": "build"
   },
   "author": "Jelmer de Maat",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jelmerdemaat/download-attribute-polyfill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jelmerdemaat/download-attribute-polyfill/issues"
+  },
+  "homepage": "https://github.com/jelmerdemaat/download-attribute-polyfill",
   "devDependencies": {
     "@babel/core": "^7.6.3",
     "@babel/preset-env": "^7.6.3",
