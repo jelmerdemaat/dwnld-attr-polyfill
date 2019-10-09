@@ -3,12 +3,13 @@
 Will polyfill the functionality of:
 
 ```html
+                          ↓ ↓ ↓
 <a href="/somefile.pdf" download>
     Download this (don't navigate to it)
 </a>
 ```
 
-in [browsers that don't support it](https://www.caniuse.com/#feat=download). At this time, that's mainly IE. This polyfill is *small* and works *fast*.
+in [browsers that don't support it](https://www.caniuse.com/#feat=download). At this time, that's mainly IE. This polyfill is **small** and works **fast**.
 
 ## Usage
 
