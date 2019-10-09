@@ -1,0 +1,20 @@
+{
+  "name": "download-attribute-polyfill",
+  "version": "1.0.0",
+  "description": "Polyfills the a[download] attribute",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "build"
+  },
+  "author": "Jelmer de Maat",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "rollup": "^1.23.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.1.2"
+  }
+}
