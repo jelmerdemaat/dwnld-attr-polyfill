@@ -8,7 +8,7 @@ Will polyfill the functionality of:
 </a>
 ```
 
-in [browsers that don't support it](https://www.caniuse.com/#feat=download). At this time, that's mainly IE.
+in [browsers that don't support it](https://www.caniuse.com/#feat=download). At this time, that's mainly IE. This polyfill is *small* and works *fast*.
 
 ## Usage
 
