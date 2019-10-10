@@ -1,5 +1,5 @@
 {
-  "name": "attribute-download-polyfill",
+  "name": "dwnld-attr-polyfill",
   "version": "1.1.0",
   "description": "Polyfills the a[download] attribute",
   "main": "dist/index.js",
