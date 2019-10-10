@@ -1,6 +1,6 @@
-# dwnld-attribute-polyfill
+# dwnld-attr-polyfill
 
-Will polyfill the functionality of:
+Will polyfill the functionality of the download attribute:
 
 ```html
                           ↓ ↓ ↓
@@ -16,12 +16,12 @@ in IE11, [which doesn't support it](https://www.caniuse.com/#feat=download). Thi
 Install using [npm](https://docs.npmjs.com/about-npm/):
 
 ```sh
-npm i -S download-attribute-polyfill
+npm i -S dwnld-attr-polyfill
 ```
 And include it in your JavaScript somewhere:
 
 ```sh
-import 'download-attribute-polyfill';
+import 'dwnld-attr-polyfill';
 ```
 
 This polyfill automatically does its work. It will:
