@@ -32,7 +32,7 @@ This polyfill automatically does its work. It will:
 4. Via an `XMLHttpRequest`, request the resource and create a blob of data
 5. Instruct IE11 to download that data using `msSaveBlob`
 
-### Why didn't you just use the world 'download' in the package name?
+### Why didn't you just use the word 'download' in the package name?
 Because npm doesn't allow that:
 
 ```
