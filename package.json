@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "xo"
   },
   "author": "Jelmer de Maat",
   "license": "SEE LICENSE IN LICENSE",
@@ -26,7 +26,17 @@
     "@babel/preset-env": "^7.7.6",
     "rollup": "^1.27.9",
     "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-terser": "^5.1.2"
+    "rollup-plugin-terser": "^5.1.2",
+    "xo": "^0.25.3"
+  },
+  "xo": {
+    "envs": ["browser"],
+    "prettier": true,
+    "ignores": ["*.config.js"]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "bracketSpacing": true
   },
   "keywords": [
     "download",
