@@ -2,7 +2,7 @@ const downloadAttributeSupport = 'download' in document.createElement('a');
 const msSaveBlob = typeof window.navigator.msSaveBlob !== 'undefined';
 
 if (!downloadAttributeSupport && msSaveBlob) {
-	document.addEventListener('click', (evt) => {
+	document.addEventListener('click', evt => {
 		const { target } = evt;
 		const { tagName } = target;
 
@@ -26,7 +26,11 @@ if (!downloadAttributeSupport && msSaveBlob) {
 				if (xhr.status === 200) {
 					window.navigator.msSaveBlob(xhr.response, fileName);
 				} else {
-					console.error('download-attribute-polyfill:', xhr.status, xhr.statusText);
+					console.error(
+						'download-attribute-polyfill:',
+						xhr.status,
+						xhr.statusText
+					);
 				}
 			};
 
