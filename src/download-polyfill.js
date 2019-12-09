@@ -4,11 +4,13 @@ const msSaveBlob = typeof window.navigator.msSaveBlob !== 'undefined';
 if (!downloadAttributeSupport && msSaveBlob) {
 	document.addEventListener('click', (evt) => {
 		const { target } = evt;
-		const { tagName, href } = target;
-		const fileName = new URL(href).pathname.split('/').pop();
+		const { tagName } = target;
 
 		if (tagName === 'A' && target.hasAttribute('download')) {
 			evt.preventDefault();
+
+			const { href } = target;
+			const fileName = new URL(href).pathname.split('/').pop();
 
 			const xhr = new XMLHttpRequest();
 
