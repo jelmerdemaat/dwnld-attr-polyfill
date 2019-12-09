@@ -1,5 +1,7 @@
 # dwnld-attr-polyfill
 
+[GitHub](https://github.com/jelmerdemaat/dwnld-attr-polyfill) | [NPM](https://www.npmjs.com/package/dwnld-attr-polyfill) | [@jelmerdemaat](https://twitter.com/jelmerdemaat)
+
 Will polyfill the functionality of the download attribute:
 
 ```html
