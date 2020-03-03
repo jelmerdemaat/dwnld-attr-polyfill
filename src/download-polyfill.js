@@ -1,7 +1,8 @@
-const downloadAttributeSupport = 'download' in document.createElement('a');
-const msSaveBlob = typeof window.navigator.msSaveBlob !== 'undefined';
+const isBrowser = typeof window !== 'undefined';
+const downloadAttributeSupport = isBrowser && 'download' in document.createElement('a');
+const msSaveBlob = isBrowser && typeof window.navigator.msSaveBlob !== 'undefined';
 
-if (!downloadAttributeSupport && msSaveBlob) {
+if (isBrowser && !downloadAttributeSupport && msSaveBlob) {
 	document.addEventListener('click', evt => {
 		const { target } = evt;
 		const { tagName } = target;
