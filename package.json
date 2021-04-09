@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
-    "test": "xo"
+    "test": "xo",
+    "prepare": "npm run build"
   },
   "author": "Jelmer de Maat",
   "license": "SEE LICENSE IN LICENSE",

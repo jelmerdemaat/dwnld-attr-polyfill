@@ -11,7 +11,8 @@ if (isBrowser && !downloadAttributeSupport && msSaveBlob) {
 			evt.preventDefault();
 
 			const { href } = target;
-			const fileName = new URL(href).pathname.split('/').pop();
+			const download = target.getAttribute('download');
+			const fileName = download || new URL(href).pathname.split('/').pop();
 
 			const xhr = new XMLHttpRequest();
 
