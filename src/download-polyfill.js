@@ -1,3 +1,6 @@
+// IE11 doesn't support destructuring:
+/* eslint-disable prefer-destructuring */
+
 const isBrowser = typeof window !== 'undefined';
 const downloadAttributeSupport =
 	isBrowser && 'download' in document.createElement('a');
