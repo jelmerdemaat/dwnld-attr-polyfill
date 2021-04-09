@@ -6,15 +6,15 @@ const msSaveBlob =
 
 if (!downloadAttributeSupport && msSaveBlob) {
 	document.addEventListener('click', evt => {
-		const { target } = evt;
-		const { tagName } = target;
+		const target = evt.target;
+		const tagName = target.tagName;
 
 		if (tagName === 'A' && target.hasAttribute('download')) {
 			evt.preventDefault();
 
-			const { href } = target;
+			const href = target.href;
 			const download = target.getAttribute('download');
-			const fileName = download || new URL(href).pathname.split('/').pop();
+			const fileName = download || href.split('/').pop();
 
 			const xhr = new XMLHttpRequest();
 

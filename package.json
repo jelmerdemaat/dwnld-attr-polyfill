@@ -31,9 +31,13 @@
     "xo": "^0.25.3"
   },
   "xo": {
-    "envs": ["browser"],
+    "envs": [
+      "browser"
+    ],
     "prettier": true,
-    "ignores": ["*.config.js"]
+    "ignores": [
+      "*.config.js"
+    ]
   },
   "prettier": {
     "singleQuote": true,
