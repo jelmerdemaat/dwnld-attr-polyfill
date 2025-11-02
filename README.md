@@ -1,6 +1,6 @@
 # dwnld-attr-polyfill
 
-[GitHub](https://github.com/jelmerdemaat/dwnld-attr-polyfill) | [NPM](https://www.npmjs.com/package/dwnld-attr-polyfill) | [@jelmerdemaat](https://twitter.com/jelmerdemaat)
+[GitHub](https://github.com/jelmerdemaat/dwnld-attr-polyfill) | [NPM](https://www.npmjs.com/package/dwnld-attr-polyfill) | [@jelmerdemaat](https://mastodon.social/@jelmerdemaat)
 
 Will polyfill the functionality of the download attribute:
 
@@ -18,11 +18,12 @@ in IE11, [which doesn't support it](https://www.caniuse.com/#feat=download). Thi
 Install using [npm](https://docs.npmjs.com/about-npm/):
 
 ```sh
-npm i -S dwnld-attr-polyfill
+npm install dwnld-attr-polyfill
 ```
+
 And include it in your JavaScript somewhere:
 
-```sh
+```js
 import 'dwnld-attr-polyfill';
 ```
 
