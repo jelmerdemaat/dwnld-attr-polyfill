@@ -8,7 +8,7 @@ const msSaveBlob =
 	isBrowser && typeof window.navigator.msSaveBlob !== 'undefined';
 
 if (!downloadAttributeSupport && msSaveBlob) {
-	document.addEventListener('click', evt => {
+	document.addEventListener('click', (evt) => {
 		const target = evt.target;
 		const tagName = target.tagName;
 
@@ -36,7 +36,7 @@ if (!downloadAttributeSupport && msSaveBlob) {
 					console.error(
 						'download-attribute-polyfill:',
 						xhr.status,
-						xhr.statusText
+						xhr.statusText,
 					);
 				}
 			};

@@ -3,13 +3,13 @@
   "version": "1.1.7",
   "description": "Polyfills the a[download] attribute",
   "main": "dist/index.js",
+  "type": "module",
   "files": [
     "dist/index.js"
   ],
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
-    "test": "xo",
     "prepare": "npm run build"
   },
   "author": "Jelmer de Maat",
@@ -25,19 +25,9 @@
   "devDependencies": {
     "@babel/core": "^7.7.5",
     "@babel/preset-env": "^7.7.6",
-    "rollup": "^1.27.9",
-    "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-terser": "^5.1.2",
-    "xo": "^0.25.3"
-  },
-  "xo": {
-    "envs": [
-      "browser"
-    ],
-    "prettier": true,
-    "ignores": [
-      "*.config.js"
-    ]
+    "@rollup/plugin-babel": "^6.1.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.52.5"
   },
   "prettier": {
     "singleQuote": true,
